@@ -1,0 +1,3 @@
+pyyaml>=6
+anthropic>=0.88   # only for BIDGO_EXTRACTOR=claude
+pytest>=8

@@ -1,0 +1,32 @@
+# Fictional contractor. Every rule in bidgo/rules.py cites one of these keys.
+company: Bayline Electric & Systems, Inc. (fictional)
+licenses: [C-10, C-7]
+
+bonding:
+  single_project_limit: 3000000      # largest single performance bond the surety will write
+  aggregate_remaining: 4500000       # aggregate program left after current bonded work
+
+project_size:
+  min_value: 75000
+  max_value: 3500000
+
+backlog:
+  current: 6200000
+  capacity: 9000000                  # what the field crews can carry at once
+
+service_area_counties: [Alameda, Contra Costa, Santa Clara, San Mateo, San Francisco]
+
+trades: [power, lighting, low_voltage, cctv, access_control, bda_errcs]   # self-performed
+
+max_ld_per_day: 1500                 # largest liquidated damages rate management accepts
+min_margin_pct: 12                   # checked by the estimator after takeoff, not from the package
+
+prevailing_wage:
+  capable: true                      # DIR registered, certified payroll in place
+  pla_signatory: false
+
+watch_terms:                         # phrases that always go in front of a reviewer
+  project labor agreement: "We are not PLA signatory; union hiring hall terms would apply."
+  background check: "Field crew needs clearance before the job walk and before mobilizing."
+  phased: "Phasing in an occupied building adds supervision and remobilization cost."
+  fcc grol: "BDA work needs an FCC GROL holder on the crew."
